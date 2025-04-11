@@ -1,0 +1,52 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_2.ip_user_files/ipstatic" \
+"../../../../project_2.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../project_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../project_2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+
+sv xil_defaultlib  --include "../../../../project_2.ip_user_files/ipstatic" \
+"../../../../project_2.srcs/sources_1/imports/new/FSM_ASCON.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/ascon_pack.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/ascon_pack.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/Pc.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/Permutation.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/Pl.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/Ps.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/Sbox.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/uart_pkg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/ad_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/ascon.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/ascon_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/baud_generator.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/cipher_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/compteur_double_init.sv" \
+"../../../../project_2.srcs/sources_1/imports/new/counter_block.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/fsm_dcounter.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/fsm_moore.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/fsm_uart.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/inter_spartan.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/key_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/mux_state.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/nonce_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/receive.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/reg_sel.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/register_w_en.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/rx_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/rxbit_dcounter.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/state_register_w_en.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/tag_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/trans_receive.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/transmit.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/tx_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/txbit_dcounter.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/uart_core.sv" \
+"../../../../project_2.srcs/sources_1/imports/RTL2/wave_reg.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/xor_begin_perm.sv" \
+"../../../../project_2.srcs/sources_1/imports/ascon/xor_end_perm.sv" \
+"../../../../project_2.srcs/sim_1/new/inter_spartan_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
